@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
   </head>
   <body>
@@ -12,14 +13,17 @@
       </div>
       <div class="booking">
         <h1>Doctor Appointment Form</h1>
-        <hr />
+        <br>
+
+        <hr class="line" />
+        <br>
         <form action="">
           <label for="">Appoinment Date</label>
-          <input type="date" />
+          <input type="date" name="date" />
           <br>
           <br>
           <label for="">Appoinment Time</label>
-          <input type="time" />
+          <input type="time" name="time" />
           <br>
           <br>
           
@@ -31,24 +35,24 @@
           
           <label for="">Gender </label>
           <label for=""> Male</label>
-          <input type="radio" />
+          <input type="radio" name="gender" />
           <label for=""> Female</label>
-          <input type="radio" />
+          <input type="radio" name="gender" />
           <br>
           <br>
           
           <label for="">Phone</label>
-          <input type="number"/>
+          <input type="number" name="phone"/>
           <br>
           <br>
           
           <label for="">Address</label>
-          <input type="text" placeholder="city" />
-          <input type="text" placeholder="state"  />
+          <input type="text" placeholder="city" name="city" />
+          <input type="text" placeholder="state"  name="state" />
           <br>
           <br>
           <label for="">Your Query</label>
-         <textarea></textarea>
+         <textarea name="massage"></textarea>
           
           <br>
           <br>
@@ -57,17 +61,17 @@
           <label>select which Appoinment type (s) you require</label>
           <br>
           <br>
-          <input type="checkbox" name="Appoinment-Type" /> <label for="">Cervix Checkup</label>
+          <input type="checkbox" name="Appoinment-Type" value="Cervix-Checkup" /> <label for="">Cervix Checkup</label>
           <br>
-          <input type="checkbox" name="Appoinment-Type" />
+          <input type="checkbox" name="Appoinment-Type" value="Heart-Checkup" />
           <label for="">Heart Checkup</label>
           <br>
           
-          <input type="checkbox" name="Appoinment-Type" />
+          <input type="checkbox" name="Appoinment-Type" value="Eye Checkup" />
           <label for="">Eye Checkup</label>
           <br>
 
-          <input type="checkbox" name="Appoinment-Type" />
+          <input type="checkbox" name="Appoinment-Type" value="Hearing Checkup" />
           <label for="">Hearing Checkup</label>
           <br>
 
